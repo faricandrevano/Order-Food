@@ -1,0 +1,20 @@
+
+<section class="menu hero container mx-auto py-4">
+    <h1 class="text-xl font-bold mb-8 mt-6">Daftar Menu</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-16 gap-x-12">
+        <% pizzas.forEach(function(pizza) { %>
+
+        <div class="w-full md:w-64 border border-gray-400 p-3 rounded-xl shadow-lg">
+            <img class="h-40 mb-4 mx-auto" src="<%=pizza.image%>" alt="">
+            <div class="text-center">
+                <h2 class="mb-4 text-lg"><%= pizza.name %></h2>
+                <!-- <span class="size py-1 px-4 rounded-full uppercase text-xs"><%= pizza.size %></span> -->
+                <div class="flex items-center justify-around mt-6 mb-10">
+                    <span class="font-bold text-lg"><%= rupiah(pizza.price) %></span>
+                </div>
+            </div>
+        </div>
+        <% }) %>
+
+    </div>
+</section>

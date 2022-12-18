@@ -1,0 +1,28 @@
+
+<section class="menu container mx-auto py-8 mt-12 hero">
+    <h1 class="text-xl font-bold mb-8">All Menu</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-16 gap-x-12">
+        <% dataMenu.forEach(function(dataMenu) { %>
+        <%if(dataMenu.categori) {%>
+        <a href="/customers/categori/<%=dataMenu.categori%>/<%=dataMenu.kodeMenu%>">
+        <div class="w-full md:w-64 border border-gray-400 shadow-lg rounded-xl p-4">
+            <img class="h-40 mb-4 mx-auto" src="<%=dataMenu.image%>" alt="">
+            <div class="text-center">
+                <h2 class="mb-4 text-lg"><%= dataMenu.name %></h2>
+                <div class="flex items-center justify-around mt-6">
+                    <span class="font-bold text-lg pr-4"><%= rupiah(dataMenu.price) %></span>
+                    <!-- buat dataset -->
+                    <!-- <button data-pizza="<%= JSON.stringify(dataMenu) %>"
+                        class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                        <span>+</span>
+                        <span class="ml-4">Add</span>
+                    </button> -->
+                </div>
+            </div>
+        </div>
+        </a>
+        <%}%>
+        <% }) %>
+
+    </div>
+</section>

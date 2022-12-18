@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+      .container {
+        padding: 0px 50px;
+      }
+      .py-4 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .active {
+        border-bottom: 2px solid #FE5F1E;
+        display: block;
+      }
+  }

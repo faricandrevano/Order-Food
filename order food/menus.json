@@ -1,0 +1,81 @@
+[{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd736ee"
+  },
+  "name": "Margherita",
+  "image": "pizza.png",
+  "price": "80000",
+  "size": "small",
+  "kodeMenu": "232932",
+  "categori": "pizza"
+},{
+  "_id": {
+    "$oid": "5eee6671a27a66807cf2bea3"
+  },
+  "name": "Marinara",
+  "image": "pizza.png",
+  "price": "100000",
+  "size": "medium",
+  "kodeMenu": "2329326",
+  "categori": "pizza"
+},{
+  "_id": {
+    "$oid": "5eee6692a27a66807cf2bea4"
+  },
+  "name": "Carbonara",
+  "image": "pizza.png",
+  "price": "75000",
+  "size": "small",
+  "kodeMenu": "23229332",
+  "categori": "pizza"
+},{
+  "_id": {
+    "$oid": "5eee66a5a27a66807cf2bea5"
+  },
+  "name": "Americana",
+  "image": "pizza.png",
+  "price": "140000",
+  "size": "large",
+  "kodeMenu": "2324329322",
+  "categori": "pizza"
+},{
+  "_id": {
+    "$oid": "5eee66c4a27a66807cf2bea6"
+  },
+  "name": "Chicken Mushroom",
+  "image": "pizza.png",
+  "price": "95000",
+  "size": "medium",
+  "kodeMenu": "23222313932",
+  "categori": "pizza"
+},{
+  "_id": {
+    "$oid": "5eee66cfa27a66807cf2bea7"
+  },
+  "name": "Paneer pizza",
+  "image": "pizza.png",
+  "price": "65000",
+  "size": "small",
+  "kodeMenu": "2324354932",
+  "categori": "pizza"
+},{
+  "_id": {
+    "$oid": "5eee66eea27a66807cf2bea8"
+  },
+  "name": "Vegies pizza",
+  "image": "pizza.png",
+  "price": "120000",
+  "size": "large",
+  "kodeMenu": "232942332",
+  "categori": "pizza"
+},{ 
+  "_id": {
+    "$oid": "5eee6717a27a66807cf2bea9"
+  },
+  "name": "Pepperoni",
+  "image": "pizza.png",
+  "price": "85000",
+  "size": "medium",
+  "kodeMenu": "232912332",
+  "categori": "pizza"
+}]

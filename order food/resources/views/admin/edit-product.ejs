@@ -1,0 +1,93 @@
+
+<!-- component -->
+<div class="flex items-center justify-center p-12">
+  <!-- Author: FormBold Team -->
+  <!-- Learn More: https://formbold.com -->
+  <div class="mx-auto w-full max-w-[550px]">
+    <% if (messages.error) { %>
+      <span class="text-red-500 text-sm"><%= messages.error%></span>
+    <% } %>
+    <form action="/admin/edit-product" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="id" value="<%= menu._id%>">
+      <div class="mb-5">
+        <label
+          for="name"
+          class="mb-3 block text-base font-medium text-[#07074D]"
+        >
+          Title
+        </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          value="<%=menu.name%>"
+          placeholder="Title"
+          class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+        />
+      </div>
+      <div class="mb-5">
+        <label
+          for="price"
+          class="mb-3 block text-base font-medium text-[#07074D]"
+        >
+          Price
+        </label>
+        <input
+          type="text"
+          name="price"
+          id="price"
+          value="<%=menu.price%>"
+          placeholder="price"
+          class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+        />
+      </div>
+      <div class="mb-5">
+        <label
+          for="subject"
+          class="mb-3 block text-base font-medium text-[#07074D]"
+        >
+          Description
+        </label>
+        <textarea name="desc" id="" cols="30" rows="10" class="border-2 focus:border-[#6A64F1] focus:shadow-md w-full"><%=menu.desc%></textarea>
+      </div>
+
+      <div class="mb-5">
+        <label
+          for="email"
+          class="mb-3 block text-base font-medium text-[#07074D]"
+        >
+          Category
+        </label>
+      <select id="kategori" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline" name="categori" required>
+        <% category.forEach((cate)=>{%>
+                             <option value="<%=cate.name%>" <%= menu.categori === cate.name ? 'selected' : '' %> ><%=cate.name%></option>
+        <%})%>
+      </select>
+      </div>
+      <div class="mb-5">
+        <label
+          for="subject"
+          class="mb-3 block text-base font-medium text-[#07074D]"
+        >
+          Image
+        </label>
+        <input type="hidden" data-foto="<%=menu.image%>" class="valueInput">
+        <input
+          type="file"
+          name="image"
+          id="imageFile"
+          value="./public/img/<%=menu.image%>"
+          accept="image/*"
+          class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+        />
+      </div>
+      <div>
+        <button
+          class="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

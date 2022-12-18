@@ -1,0 +1,114 @@
+<section class="register flex justify-center py-16">
+<div class="block p-6 rounded-lg shadow-lg bg-white max-w-md w-1/2 h-fit">
+  <form accept="/register" method="POST" id="submitReg">
+    <%if(messages.error){%>
+      <span class="text-red-500 text-sm"><%= messages.error%></span>
+    <%}%>
+    <div>
+      <div class="form-group mb-6">
+        <input value="<%= messages.nama%>" type="text" name="name" class="form-control
+          block
+          w-full
+          px-3
+          py-1.5
+          text-base
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput123"
+          aria-describedby="emailHelp123" placeholder="Name">
+      </div>
+    </div>
+    <div class="form-group mb-6">
+      <input value="<%= messages.email%>" type="email" name="email" class="form-control block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput125"
+        placeholder="Email address">
+    </div>
+    <div class="form-group mb-6">
+      <input value="<%= messages.phone%>" type="phone" name="phone" class="form-control block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput125"
+        placeholder="Phone">
+    </div>
+    <div class="form-group mb-6">
+      <input value="<%= messages.pass %>" type="password" name="password" class="form-control block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput126"
+        placeholder="Password">
+    </div>
+    <div class="form-group mb-6">
+      <input value="<%= messages.passConf %>" type="password" name="passwordConfirm" class="form-control block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput126"
+        placeholder="Password confirm">
+    </div>
+    <button id="btnRegister" type="submit" class="
+      w-full
+      px-6
+      py-2.5
+      bg-[#FE5F1E]
+      text-white
+      font-medium
+      text-xs
+      leading-tight
+      uppercase
+      rounded
+      shadow-md
+      btn-primary
+      ">Sign up</button>
+       <p class="text-gray-800 mt-8 text-center">Already have account? <a href="/login"
+        class="transition duration-200 ease-in-out">Login</a>
+    </p>
+  </form>
+</div>
+</section>
